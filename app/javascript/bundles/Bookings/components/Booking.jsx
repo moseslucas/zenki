@@ -27,9 +27,9 @@ export default class Booking extends React.Component {
 
 const MyMapComponent = withScriptjs(withGoogleMap((props) =>
   <GoogleMap
-    defaultZoom={8}
-    defaultCenter={{ lat: -34.397, lng: 150.644 }}
+    defaultZoom={15}
+    defaultCenter={{ lat: 14.6066560, lng: 121.0816800 }}
   >
-    {props.isMarkerShown && <Marker position={{ lat: -34.397, lng: 150.644 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 14.6066560, lng: 121.0816800 }} />}
   </GoogleMap>
 ))
