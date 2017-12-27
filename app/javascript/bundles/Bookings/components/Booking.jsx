@@ -19,6 +19,8 @@ export default class Booking extends React.Component {
           containerElement={<div style={{ height: `400px` }} />}
           mapElement={<div style={{ height: `100%` }} />}
         />
+        <label> Pick-Up </label><input className='form-control'/>
+        <label> Destination </label><input className='form-control'/>
       </div>
     );
   }
