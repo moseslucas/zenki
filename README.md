@@ -2,7 +2,7 @@
 
  = Rails app using `react_on_rails` gem  with redux =
  
- Deployed to heroku: http://localhost:3000/hello_world
+ Deployed to heroku: https://zenkii.herokuapp.com/hello_world
  
   - Ruby Version: 2.4.2
   - Rails Version: 5.1.4
