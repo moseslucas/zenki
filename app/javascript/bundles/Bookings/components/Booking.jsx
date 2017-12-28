@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker  } from "react-google-maps"
+import { MarkerWithLabel } from 'react-google-maps/lib/components/addons/MarkerWithLabel'
 
 export default class Booking extends React.Component {
   constructor(props) {
@@ -52,8 +53,15 @@ export default class Booking extends React.Component {
 const MyMapComponent = withScriptjs(withGoogleMap((props) =>
   <GoogleMap
     defaultZoom={15}
+    defaultCenter={{lat: 14.6066560, lng: 121.0816800}}
     center={{ lat: props.lat, lng: props.lng }}
   >
-    {props.isMarkerShown && <Marker position={{ lat: props.lat, lng: props.lng }} />}
+    <MarkerWithLabel
+      position={{ lat: props.lat, lng: props.lng }}
+      labelAnchor={new google.maps.Point(0, 0)}
+      labelStyle={{backgroundColor: 'white', fontSize: '14px', padding: '16px'}}
+    >
+      <div>Pick Up</div>
+    </MarkerWithLabel>
   </GoogleMap>
 ))
