@@ -39,6 +39,9 @@ export default class Booking extends React.Component {
     );
   }
 
+  mapGoogle () {
+  }
+
   _handlePickupChange (e) {
     const pickup = e.target.value.split(',')
     this.setState({
